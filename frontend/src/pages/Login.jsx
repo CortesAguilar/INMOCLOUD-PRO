@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import api from '../api'
 import { useAuth } from '../App'
+import logoTecNM from '../assets/Logo-TecNM.png'
+import logoITT from '../assets/logo_ITT.png'
+import cooltextTitle from '../assets/cooltextTitle.png'
 
 export default function Login() {
   const [usuario, setUsuario] = useState('')
@@ -29,8 +32,8 @@ export default function Login() {
     <div style={styles.page}>
       <div style={styles.topBar}>
         <div style={styles.logos}>
-          <img src="/src/assets/Logo-TecNM.png" alt="TecNM" style={styles.logoImg} />
-          <img src="/src/assets/logo_ITT.png" alt="ITT" style={{ ...styles.logoImg, marginLeft: '20px' }} />
+          <img src={logoTecNM} alt="TecNM" style={styles.logoImg} />
+          <img src={logoITT} alt="ITT" style={{ ...styles.logoImg, marginLeft: '20px' }} />
         </div>
         <p style={styles.topBarText}>
           INMOCLOUD PRO es un proyecto escolar de Ingeniería en Sistemas Computacionales
@@ -43,7 +46,7 @@ export default function Login() {
         <div style={styles.left}>
           <div style={styles.overlay}>
             <img
-              src="/src/assets/cooltextTitle.png"
+              src={cooltextTitle}
               alt="Gestión Inmobiliaria"
               style={{ width: '100%', maxWidth: '900px', marginBottom: '40px' }}
             />

@@ -7,6 +7,7 @@ import Alertas from './Alertas'
 import Finanzas from './Finanzas'
 import Clientes from './Clientes'
 import Bitacora from './Bitacora'
+import cooltextTitle from '../assets/cooltextTitle.png'
 
 
 const NAV = [
@@ -72,7 +73,7 @@ export default function Dashboard() {
       <aside style={styles.sidebar}>
         <div style={styles.brand}>
           <img
-            src="/src/assets/cooltextTitle.png"
+            src={cooltextTitle}
             alt="Inmobiliaria"
             style={{ width: '100%', objectFit: 'contain' }}
           />
