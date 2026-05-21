@@ -1,0 +1,16 @@
+# Variables de entorno — NUNCA subir al repo
+.env
+
+# Entorno virtual
+venv/
+env/
+.venv/
+
+# Cache de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
